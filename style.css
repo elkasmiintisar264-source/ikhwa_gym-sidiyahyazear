@@ -1109,3 +1109,41 @@ body {
     margin: 10px 0;
   }
 }
+
+
+
+/* ===== Responsive Services & Portfolio ===== */
+
+/* Mobile (default: <768px) */
+.services-grid,
+.portfolio-grid {
+    grid-template-columns: 1fr; /* عمود واحد */
+    gap: 20px;
+}
+
+/* Tablet (768px - 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 أعمدة */
+        gap: 25px;
+    }
+}
+
+/* PC Medium (992px - 1399px) */
+@media (min-width: 992px) and (max-width: 1399px) {
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+        gap: 30px;
+    }
+}
+
+/* PC Large (>=1400px) */
+@media (min-width: 1400px) {
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 أعمدة */
+        gap: 40px;
+    }
+}

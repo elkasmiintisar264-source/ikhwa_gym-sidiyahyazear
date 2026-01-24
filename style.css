@@ -411,7 +411,7 @@ body {
 
 
 
-/* ===== Services Section ===== */
+/* ===== Services ===== */
 .services {
     padding: 90px 60px;
     background: #868585;
@@ -483,38 +483,53 @@ body {
     color: orange;
     transform: scale(1.07);
 }
+/* ===== Services Grid (3×3 على PC كبير) ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
+    gap: 30px;
+    margin-top: 35px;
+}
 
-/* ===== Responsive Services ===== */
-
-/* PC كبير → 1200px+ */
+/* ===== تابليت → 2×? ===== */
 @media (max-width: 1200px) {
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(2, 1fr); /* 2 أعمدة */
         gap: 25px;
     }
 }
 
-/* تابليت → 900px - 1200px */
-@media (max-width: 900px) {
+/* ===== موبايل → صف واحد ===== */
+@media (max-width: 768px) {
     .services-grid {
-        grid-template-columns: 1fr; /* كل خدمة تاخذ صف كامل */
+        grid-template-columns: 1fr; /* عمود واحد */
         gap: 20px;
     }
+
     .services h2 {
         font-size: 34px;
     }
+
     .service-item {
         padding: 20px 15px;
     }
 }
 
-/* موبايل → ≤600px */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .service-item {
         padding: 18px 12px;
     }
 }
 
+
+@media (max-width: 768px) {
+    .services {
+        padding: 70px 30px;
+    }
+    .services h2 {
+        font-size: 34px;
+    }
+}
 
 
 /* ===== Team Section ===== */

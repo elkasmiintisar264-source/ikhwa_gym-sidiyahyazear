@@ -66,6 +66,51 @@ body {
 .btn-support:hover {
     background: orange;
 }
+/* ===== NAVBAR RESPONSIVE ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* TABLET + MOBILE */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .navbar nav a {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+}
+
+/* PC KBER */
+@media (min-width: 993px) {
+  .navbar nav {
+    display: flex !important;
+  }
+}
+
+
 
 /* Hero Section */
 .hero {
@@ -1112,38 +1157,3 @@ body {
 
 
 
-/* ===== Responsive Services & Portfolio ===== */
-
-/* Mobile (default: <768px) */
-.services-grid,
-.portfolio-grid {
-    grid-template-columns: 1fr; /* عمود واحد */
-    gap: 20px;
-}
-
-/* Tablet (768px - 992px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .services-grid,
-    .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 أعمدة */
-        gap: 25px;
-    }
-}
-
-/* PC Medium (992px - 1399px) */
-@media (min-width: 992px) and (max-width: 1399px) {
-    .services-grid,
-    .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 أعمدة */
-        gap: 30px;
-    }
-}
-
-/* PC Large (>=1400px) */
-@media (min-width: 1400px) {
-    .services-grid,
-    .portfolio-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 أعمدة */
-        gap: 40px;
-    }
-}

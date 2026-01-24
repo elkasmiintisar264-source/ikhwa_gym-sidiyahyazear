@@ -10,21 +10,33 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">
-            <span class="icon">AL</span> IKHWA
-        </div>
+   <header class="navbar">
+    <div class="logo">
+        <span class="icon">AL</span> IKHWA
+    </div>
 
-        <nav>
-            <a href="index.html">Accueil</a>
-           <a href="apropos.html">A propos de nous</a>
-           <a href="portfolio.html">portfolio</a>
-            <a href="servise.html">Services</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="contact.html" class="btn-support">Contact </a>
-        </nav>
-    </header>
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos de nous</a>
+        <a href="servise.html">Services</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contact.html" class="btn-support">Contact</a>
+    </nav>
+</header>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 
 <section class="contact">
     <h2>Contactez-nous</h2>

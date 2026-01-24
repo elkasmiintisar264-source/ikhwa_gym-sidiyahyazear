@@ -484,14 +484,16 @@ body {
     transform: scale(1.07);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1600px) {
     .services {
-        padding: 70px 30px;
+        padding: 120px 100px; /* زيد المساحة للشاشة الكبيرة */
     }
-    .services h2 {
-        font-size: 34px;
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
     }
 }
+
 
 /* ===== Team Section ===== */
 .team {

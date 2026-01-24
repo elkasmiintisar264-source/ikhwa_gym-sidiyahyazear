@@ -1182,16 +1182,3 @@ body {
 }
 
 
-@media (min-width: 1400px) {
-  .navbar {
-    padding: 20px 80px;
-  }
-
-  .hero,
-  .hero-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}

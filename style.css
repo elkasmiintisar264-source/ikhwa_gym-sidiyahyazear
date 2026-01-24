@@ -484,6 +484,14 @@ body {
     transform: scale(1.07);
 }
 
+@media (max-width: 768px) {
+    .services {
+        padding: 70px 30px;
+    }
+    .services h2 {
+        font-size: 34px;
+    }
+}
 @media (min-width: 1600px) {
     .services {
         padding: 120px 100px; /* زيد المساحة للشاشة الكبيرة */

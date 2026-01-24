@@ -492,13 +492,31 @@ body {
         font-size: 34px;
     }
 }
+/* ===== Services - Large Screens ===== */
 @media (min-width: 1600px) {
     .services {
         padding: 120px 100px; /* زيد المساحة للشاشة الكبيرة */
     }
+
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* items أكبر */
         gap: 40px;
+    }
+
+    .service-item {
+        padding: 35px 25px; /* زيد padding لكل item */
+    }
+
+    .services h2 {
+        font-size: 48px; /* زيد حجم العنوان */
+    }
+
+    .service-item h3 {
+        font-size: 26px; /* زيد حجم عنوان كل service */
+    }
+
+    .service-item p {
+        font-size: 18px; /* زيد حجم النص */
     }
 }
 
@@ -708,6 +726,25 @@ body {
 
 .portfolio-item.hide {
   display: none;
+}
+/* ===== Portfolio - Large Screens ===== */
+@media (min-width: 1200px) {
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+  }
+
+  .portfolio-section {
+      padding: 120px 80px; /* زيد المساحة للشاشات الكبيرة */
+  }
+
+  .portfolio-item {
+      height: 300px; /* زيد ارتفاع كل item على الشاشات الكبيرة */
+  }
+
+  .section-title {
+      font-size: 3em; /* زيد حجم العنوان */
+  }
 }
 
 /* ===== Contact Section ===== */

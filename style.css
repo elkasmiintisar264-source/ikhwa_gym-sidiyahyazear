@@ -495,7 +495,7 @@ body {
 /* ===== Services - Large Screens ===== */
 @media (min-width: 1600px) {
     .services {
-        padding: 120px 100px; /* زيد المساحة للشاشة الكبيرة */
+        padding: 1200px 1000px; /* زيد المساحة للشاشة الكبيرة */
     }
 
     .services-grid {

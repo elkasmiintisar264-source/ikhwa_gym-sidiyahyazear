@@ -617,18 +617,7 @@ body {
     font-size: 16px;
   }
 }
-/* ===== FIX EQUIPE – PC KBER ===== */
-@media (min-width: 1400px) {
-  .team-container,
-  .equipe-container,
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    max-width: 1300px;
-    margin: 40px auto 0;
-  }
-}
+
 
 /* ===== Portfolio ===== */
 .portfolio-section {
@@ -1190,4 +1179,19 @@ body {
     margin: auto;
   }
 
+}
+
+
+@media (min-width: 1400px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+
+  .hero,
+  .hero-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }

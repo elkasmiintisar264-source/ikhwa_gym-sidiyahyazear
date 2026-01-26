@@ -1182,3 +1182,35 @@ body {
 }
 
 
+/* ===============================
+   RESPONSIVE FIX — KEEP SAME DESIGN
+   =============================== */
+
+/* 🔹 HERO FIX (mobile only) */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;        /* بدل 100vh غير فالموبايل */
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+}
+
+/* 🔹 BUTTONS (same style, better stacking) */
+@media (max-width: 480px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons a {
+    margin-right: 0;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🔹 VIDEO-TEXT

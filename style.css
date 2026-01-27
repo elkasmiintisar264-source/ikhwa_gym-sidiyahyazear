@@ -1216,3 +1216,39 @@ body {
 /* 🔹 VIDEO-TEXT
    
 
+/* =========================================
+   ULTRA SAFE RESPONSIVE FIX
+   (NO DESIGN CHANGES)
+   ========================================= */
+
+/* prevent horizontal scroll only */
+html, body {
+  overflow-x: hidden;
+}
+
+/* images never overflow */
+img {
+  max-width: 100%;
+}
+
+/* if grid/flex already exists, allow wrapping */
+.team-container,
+.services-container,
+.portfolio-grid,
+.contact-container,
+.about-container {
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+/* cards never exceed screen */
+.team-card,
+.service-card,
+.portfolio-item {
+  max-width: 100%;
+}
+
+/* map & iframe safety */
+iframe {
+  max-width: 100%;
+}

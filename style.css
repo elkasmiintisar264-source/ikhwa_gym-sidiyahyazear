@@ -1216,17 +1216,3 @@ body {
 /* 🔹 VIDEO-TEXT
    
 
-.hero {
-  display: flex;
-  align-items: center;
-}
-
-@media (min-width: 1200px) {
-  .hero {
-    align-items: flex-start;
-  }
-
-  .hero-content {
-    margin-top: 140px;
-  }
-}

@@ -114,10 +114,9 @@ body {
 
 /* Hero Section */
 .hero {
-    
     background: url("images/cs.png") center/cover no-repeat;
     position: relative;
-    padding-top: 100px; /* باش المحتوى مايتغطاش من Navbar */
+    padding: 100px 0 20px;
 }
 
 .overlay {

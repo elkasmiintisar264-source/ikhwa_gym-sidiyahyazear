@@ -1262,5 +1262,5 @@ iframe {
 /* نحيدو أي margin خارجي ممكن يهبّط الهيرو */
 .hero,
 .hero * {
-  margin-bottom: 0;
+  margin-bottom: 550;
 }

@@ -1254,13 +1254,16 @@ iframe {
 }
 
 
-/* ===== REMOVE EXTRA SPACE UNDER HERO (SAFE) ===== */
-.hero {
-  overflow: hidden;
-}
 
-/* نحيدو أي margin خارجي ممكن يهبّط الهيرو */
-.hero,
-.hero * {
-  margin-bottom: 550;
+
+
+/* =========================================
+   FIX HERO TEXT – ONLY VERY LARGE SCREENS
+   NO IMPACT ON SMALL PC / LAPTOP
+   ========================================= */
+
+@media (min-width: 1400px) {
+  .hero {
+    padding-top: 160px; /* كيهبط الكتابة */
+  }
 }

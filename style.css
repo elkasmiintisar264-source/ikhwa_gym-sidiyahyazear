@@ -1257,13 +1257,8 @@ iframe {
 
 
 
-/* =========================================
-   FIX HERO TEXT – ONLY VERY LARGE SCREENS
-   NO IMPACT ON SMALL PC / LAPTOP
-   ========================================= */
-
-@media (min-width: 1400px) {
-  .hero {
-    padding-top: 160000px; /* كيهبط الكتابة */
+@media (min-width: 1600px) {
+  .hero-content {
+    margin-top: 1206px !important;
   }
 }

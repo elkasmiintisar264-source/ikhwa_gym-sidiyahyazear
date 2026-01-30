@@ -1275,6 +1275,6 @@ iframe {
 /* Extra-large / ultra-wide screens */
 @media (min-width: 1600px) {
   .hero-content {
-    margin-top: 120px !important;
+    margin-top: 1200px !important;
   }
 }

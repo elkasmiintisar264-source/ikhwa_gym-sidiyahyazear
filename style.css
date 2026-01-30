@@ -1278,3 +1278,8 @@ iframe {
     margin-top: 80px !important;
   }
 }
+@media (min-width: 1600px) {
+  .hero-content {
+    transform: translateY(60px);
+  }
+}

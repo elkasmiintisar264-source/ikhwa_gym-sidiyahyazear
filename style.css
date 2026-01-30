@@ -1256,30 +1256,13 @@ iframe {
 
 
 
-
-
-
-
 /* =========================================
-   FIX HERO TEXT – ONLY VERY LARGE SCREENS
-   NO IMPACT ON SMALL PC / LAPTOP
+   HERO FIX – VERY LARGE SCREENS ONLY
    ========================================= */
-
-/* Large desktops */
-@media (min-width: 1400px) {
-  .hero {
-    padding-top: 200px; /* كيهبط الكتابة */
-  }
-}
-
-/* Extra-large / ultra-wide screens */
 @media (min-width: 1600px) {
   .hero-content {
-    margin-top: 80px !important;
+    position: relative;
+    top: 160px;
   }
 }
-@media (min-width: 1600px) {
-  .hero-content {
-    transform: translateY(60px);
-  }
-}
+

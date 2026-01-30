@@ -1268,7 +1268,7 @@ iframe {
 /* Large desktops */
 @media (min-width: 1400px) {
   .hero {
-    padding-top: 190px; /* كيهبط الكتابة */
+    padding-top: 220px; /* كيهبط الكتابة */
   }
 }
 

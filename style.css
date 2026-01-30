@@ -1268,13 +1268,13 @@ iframe {
 /* Large desktops */
 @media (min-width: 1400px) {
   .hero {
-    padding-top: 160px; /* كيهبط الكتابة */
+    padding-top: 120px; /* كيهبط الكتابة */
   }
 }
 
 /* Extra-large / ultra-wide screens */
 @media (min-width: 1600px) {
   .hero-content {
-    margin-top: 130px !important;
+    margin-top: 120px !important;
   }
 }

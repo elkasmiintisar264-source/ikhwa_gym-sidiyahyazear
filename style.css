@@ -149,6 +149,11 @@ body {
     margin-bottom: 30px;
     color: #ddd;
 }
+.hero {
+  display: flex;
+  align-items: flex-start; /* ديما من الفوق */
+}
+
 
 /* Hero Buttons */
 .buttons a {
